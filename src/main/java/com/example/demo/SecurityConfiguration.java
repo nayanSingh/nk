@@ -43,7 +43,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                         .keyname(this.keyAlias)
                         .keyPassword(this.password)
                         .and()
-                    .protocol("https")
+                    .protocol("http")
                     .hostname(String.format("%s:%s", "localhost", this.port))
                     .basePath("/")
                     .and()
